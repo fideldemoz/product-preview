@@ -10,6 +10,8 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
     * {
@@ -17,28 +19,66 @@
       margin: 0;
     }
     body {
+      font-family: 'Montserrat', sans-serif;
+      color: hsl(228, 12%, 48%);
       background-color: hsl(30, 38%, 92%);
+      font-size: 14px;
     }
     main {
-      width: 500px;
+      color: hsl(228, 12%, 48%);
+      width: 520px;
       margin: 20vh auto;
-      border: 2px solid gray;
       display: flex;
       border-radius: 12px;
       background-color: hsl(0, 0%, 100%);
     }
     .left {
       width: 250px;
-      height: 375px;
+      height: 350px;
       background: url(images/image-product-desktop.jpg) no-repeat;
       background-position: center;
-      background-size: contain;
+      background-size: cover;
       border-radius: 12px 0 0 12px;
     }
     .right {
+      font-weight: 500;
       flex: 1 0 250px;
+      padding: .5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box;
     }
-
+    .right span {
+      font-weight: 500;
+      font-size: 16px;
+    }
+    .right h1 {
+      color: hsl(212, 21%, 14%);
+      font-family: 'Fraunces', serif;
+    }
+    button {
+      background-color: hsl(158, 36%, 37%);
+      padding: 12px 22px;
+      color: white;
+      font-weight: 700;
+      display: flex;
+      gap: 12px;
+      border: none;
+      border-radius: 8px;
+    }
+    .prices {
+      color: hsl(158, 36%, 37%);
+      font-weight: 700;
+      display: flex;
+      gap: 15px;
+      font-size: 18px;
+    }
+    .prices .before {
+      color: hsl(228, 12%, 48%);
+      font-size: 14px;
+      align-self: center;
+    }
     @media screen and (max-width: 550px) {
       main {
         flex-direction: column;
@@ -65,10 +105,12 @@
         Perfumer-Creator for the House of CHANEL  
       </p>
       <div class="prices">
-        <h2>1149.99 </h2>
-        <h2 class="before">1169.99</h2>
+        <h2>149.99 </h2>
+        <h2 class="before">169.99</h2>
       </div>
-      <button>Add to Cart</button>
+      <button>
+      <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg>
+      Add to Cart</button>
     </div>
   </main>
   
